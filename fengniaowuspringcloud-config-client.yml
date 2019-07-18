@@ -8,7 +8,7 @@ server:
 spring:
   profiles: dev.eureka.node1
   application: 
-    name: fengniaowucloud-config-client
+    name: fengniaowuspringcloud
 eureka:
   instance:
     hostname: eureka7001.com #eureka服务端的实例名称
