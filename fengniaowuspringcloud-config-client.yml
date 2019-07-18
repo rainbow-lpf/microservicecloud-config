@@ -74,3 +74,10 @@ eureka:
     service-url: 
       defaultZone: http://eureka7001.com:7001/eureka/
  
+---
+server: 
+  port: 10000
+spring:
+  profiles: dev.fengniaowu.hystrixdashboard
+  application: 
+    name: fengniaowuspringcloud
