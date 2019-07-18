@@ -99,8 +99,8 @@ eureka:
     prefer-ip-address: true 
  
 zuul:
-  ignored-services: "*"   #原真实名称忽略  单个具体，多个可以用"*"
   prefix: /fengniaowu #设置统一的前缀
+  ignored-services: "*"   #原真实名称忽略  单个具体，多个可以用"*"
   routes: 
     mydept.serviceId: fengniaowuspringcloud-zuulgeteway
     mydept.path: /talos/**    #自定义代理名称访问
