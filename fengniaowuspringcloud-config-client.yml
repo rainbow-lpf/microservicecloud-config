@@ -28,6 +28,8 @@ spring:
     name: fengniaowuspringcloud
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+    filters: stat,wall,log4j
+    logSlowSql: true
     driver-class-name: com.mysql.jdbc.Driver                # mysql驱动包
     url: jdbc:mysql://192.168.1.68:3307/cloudDB01              # 数据库名称
     username: root
