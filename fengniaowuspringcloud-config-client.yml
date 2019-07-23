@@ -116,7 +116,7 @@ info:
 
 ---
 server: 
-  port: 8002 
+  port: 8008
 spring:
   profiles: dev.provider.apartment
   application: 
