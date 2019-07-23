@@ -135,8 +135,15 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/
-    instance-id: fengniaowuspringcloud-department   #自定义服务名称信息
+    instance-id: fengniaowuspringcloud-aepartment   #自定义服务名称信息
     prefer-ip-address: true
+
+info:
+  app.name: fengniaowu-microservicecloud
+  company.name: www.fengniaowu.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$info.app
+
     
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
