@@ -113,3 +113,27 @@ info:
   company.name: www.fengniaowu.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
+
+---
+server: 
+  port: 8002 
+spring:
+  profiles: dev.provider.apartment
+  application: 
+    name: fengniaowuspringcloud
+  datasource:
+    url: jdbc:sqlserver://kc-fengniaowu-dev.database.chinacloudapi.cn:1433;DatabaseName=KC.Fengniaowu.Talos-Dev
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: KC
+    password: V245ZGxbEhn3Sakk
+    dbcp2:
+      min-idle: 5                                           # 数据库连接池的最小维持连接数
+      initial-size: 5                                       # 初始化连接数
+      max-total: 5                                          # 最大连接数
+      max-wait-millis: 200   
+      
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
+  type-aliases-package: com.fengniaowu.springcloud.entities    # 所有Entity别名类所在包
+  mapper-locations:
+  - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
